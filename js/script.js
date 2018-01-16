@@ -6,7 +6,19 @@
 
 // Document Ready Function. All of your jQuery should go in here. 
 $( document ).ready(function() {
-  
+$("button").click(function(){
+    var message=$("input").val();
+    var parrotMessage = wordToPigLatin(message);
+    $("#message").text(parrotMessage);
+});
+
+function wordToPigLatin(word){
+ return word + "ay";    
+}
+function sentenceToPigLatin(sentence) {
+    var words = sentence.split (" ");
+    console.log(words);
+}
 
 
 
